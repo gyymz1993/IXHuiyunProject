@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dip"
+    android:orientation="horizontal"
+    android:descendantFocusability="afterDescendants"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" 
+    style="@style/list_item_single" >
+    
+    <TextView
+        android:id="@+id/tv_area"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/tv_comm"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="false" />
+    
+    <TextView
+        android:id="@+id/tv_exec"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="true" />
+    
+    <TextView
+        android:id="@+id/tv_switch"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="true" />
+
+</LinearLayout>

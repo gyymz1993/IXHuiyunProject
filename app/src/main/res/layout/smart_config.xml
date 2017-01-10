@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="45.3dp"
+	    android:background="@color/ix_green"
+	    >
+	   
+	    <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_return"
+            android:focusable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+	    <TextView
+	        android:id="@+id/hd_title"
+	        android:textSize="20sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:textColor="#FFFFFF"
+	        android:text="中继器WIFI设置" />
+	        
+	</RelativeLayout>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" 
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:text="SSID:" />
+
+            <TextView
+                android:id="@+id/ssid"
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:textColor="#000000"
+                android:text="@string/label_password" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#000000"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_weight="1"
+                 />
+            <CheckBox
+	            android:id="@+id/showPwd"
+	            android:layout_width="0dp"
+	            android:layout_weight="3"
+	            android:layout_height="wrap_content"
+	            android:textColor="#000000"
+	            android:text="@string/label_show_password" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textColor="#000000"
+                android:text="@string/label_device_count" />
+
+            <RadioGroup
+                android:id="@+id/deviceCountGroup"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/deviceCountSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:checked="true"
+                    android:text="@string/label_device_count_single" 
+                    />
+
+                <RadioButton
+                    android:id="@+id/deviceCountMultipe"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_device_count_multiple"
+                    android:layout_marginLeft="10dp"
+                     />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+             android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/connect"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textColor="#ffffff"
+                android:background="@color/ix_green"
+                android:text="@string/btn_connect" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ymz="http://schemas.android.com/apk/res/com.ixhuiyunproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.huiyun.ixconfig.view.ContrlView
+        android:id="@+id/cv_contrl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="8dip"
+        ymz:device_names="风机"
+        ymz:logo_srcs="@drawable/contrl_light" />
+
+</LinearLayout>

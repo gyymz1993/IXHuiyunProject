@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_return"
+            android:focusable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="定时"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/parent_last"
+            android:gravity="center"
+            android:text="设置日期"
+            android:textColor="#28a465"
+            android:textSize="20sp" />
+
+        <DatePicker
+            android:id="@+id/dp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:calendarViewShown="false" 
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/mSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/parent_last"
+            android:gravity="center"
+            android:text="时间选择"
+            android:textColor="#28a465"
+            android:textSize="20sp"
+            android:visibility="gone"
+             />
+
+        <TimePicker
+            android:id="@+id/tp_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px" 
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            style="@style/layout_wrap"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="场景名："
+                android:visibility="gone" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spin_province"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- 折叠式列表 -->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_scenes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/parent_last"
+            android:gravity="center"
+            android:text="场景设置"
+            android:textColor="#28a465"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_xunhuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/parent_last"
+            android:gravity="center"
+            android:text="是否循环"
+            android:textColor="#28a465"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parent_last"
+        android:onClick="addTimer"
+        android:text="确定设置" >
+    </Button>
+
+</LinearLayout>

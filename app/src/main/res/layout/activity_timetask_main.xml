@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:contentDescription="@string/content_description_return"
+            android:focusable="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="定时"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/id_lv_timertask"
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="30dip"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:transcriptMode="normal" />
+
+    <Button
+        android:id="@+id/add_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dip"
+        android:layout_marginRight="100dip"
+        android:background="@drawable/btn_shape"
+        android:text="添  加"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:layout_marginBottom="20dip"
+         />
+
+</LinearLayout>

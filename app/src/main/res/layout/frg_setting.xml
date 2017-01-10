@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:lzy="http://schemas.android.com/apk/res/com.ixhuiyunproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_marginTop="50dip"
+        android:layout_weight="1.4" >
+
+        <RelativeLayout
+            android:id="@+id/ig"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/setting_bg" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/setting_logo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/logo"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/set_fa"
+                    style="@style/layout_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="家庭id"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    style="@style/layout_horizontal"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:src="@drawable/h_line" />
+
+                <TextView
+                    android:id="@+id/set_user"
+                    style="@style/layout_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="用户名"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+
+                <ImageView
+                    style="@style/layout_horizontal"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:src="@drawable/h_line" />
+
+                <TextView
+                    android:id="@+id/user_type"
+                    style="@style/layout_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="权限"
+                    android:textColor="#ffffff"
+                    android:textSize="15dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="35dip"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <com.huiyun.ixconfig.view.SettingItemRLView
+            android:id="@+id/settingPage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            lzy:item_name="设置"
+            lzy:logo_src="@drawable/set_ioc_set" />
+
+        <com.huiyun.ixconfig.view.SettingItemRLView
+            android:id="@+id/set_software"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            lzy:item_name="软件设置"
+            lzy:logo_src="@drawable/set_icon_software" />
+
+        <com.huiyun.ixconfig.view.SettingItemRLView
+            android:id="@+id/set_guanyu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            lzy:item_name="关于我们"
+            lzy:logo_src="@drawable/set_ioc_guanyu" />
+
+        <com.huiyun.ixconfig.view.SettingItemRLView
+            android:id="@+id/logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            lzy:item_name="切换账号"
+            lzy:logo_src="@drawable/set_icon_change" />
+    </LinearLayout>
+
+</LinearLayout>

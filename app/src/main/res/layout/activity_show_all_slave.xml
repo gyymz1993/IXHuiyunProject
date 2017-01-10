@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+	<!-- 标题栏 -->
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white"
+            android:contentDescription="@string/content_description_return" />
+
+        <TextView
+            android:id="@+id/tv_title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_all_slave"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        
+        <ImageView
+            android:id="@+id/iv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:onClick="showMenu"
+            android:src="@drawable/menu"
+            android:contentDescription="@string/content_description_return" />
+        
+    </RelativeLayout>
+	    
+	<!-- 列表 -->
+
+	<ListView
+	    android:id="@+id/lv_slave"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	</ListView>
+    
+</LinearLayout>

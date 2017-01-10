@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="遥控设置"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/remote_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="7dp"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:layout_marginTop="30dip"
+        android:id="@+id/lsv_eare_set"
+        style="@style/layout_height_wrap_content"
+        android:dividerHeight="0dip"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:transcriptMode="normal" />
+
+    <LinearLayout
+        android:id="@+id/lay_add"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginRight="8dip"
+        android:layout_marginTop="8dip"
+        android:onClick="addRemote"
+        android:background="@drawable/btn_shape"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/img_add"
+            style="@style/layout_horizontal"
+            android:layout_weight="1" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/img_add"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:src="@drawable/add" >
+        </ImageView>
+
+        <TextView
+            style="@style/layout_horizontal"
+            android:layout_weight="1.3"
+            android:gravity="center_vertical"
+            android:text="添加遥控器"
+            android:textColor="#ffffff"
+            android:textSize="17dip" />
+
+        <TextView
+            android:id="@+id/img_add"
+            style="@style/layout_horizontal"
+            android:layout_weight="1" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

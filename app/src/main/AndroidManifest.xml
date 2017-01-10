@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ixhuiyunproject" >
+
+    <!-- 推送 -->
+    <permission
+        android:name="com.huiyun.ix_configreconstitute.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- 友盟统计 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- 语音识别 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.huiyun.ix_configreconstitute.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 视屏 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 以下是使用wifi访问网络所需的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.USE_SIP"/>
+    <uses-permission android:name="android.permission.CONFIGURE_SIP"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+
+    <!-- COMMENT THIS if you plan to use in library mode -->
+    <permission
+        android:name="android.permission.USE_SIP"
+        android:permissionGroup="android.permission-group.COST_MONEY"
+        android:protectionLevel="dangerous"/>
+    <permission
+        android:name="android.permission.CONFIGURE_SIP"
+        android:permissionGroup="android.permission-group.COST_MONEY"
+        android:protectionLevel="dangerous"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".huiyun.ixconfig.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+        <activity
+            android:name=".huiyun.ixconfig.activity.VideoSplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+
+        <!-- 视频 -->
+        <activity
+            android:name=".ipcamer.demo.AddCameraActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name="ipcamer.demo.PlayBackTFActivity" >
+        </activity>
+        <activity android:name="ipcamer.demo.PlayBackActivity" >
+        </activity>
+        <activity
+            android:name=".ipcamer.demo.SmallPlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ipcamer.demo.PlayActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="play"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".ipcamer.demo.SettingWifiActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="WifiSetting"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service android:name=".ipcamer.demo.BridgeService" >
+        </service>
+
+
+
+        <activity
+            android:name=".huiyun.ixconfig.activity.wifi.WifiActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".huiyun.ixconfig.activity.userlogin.RegisterAdminActivity" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.userlogin.LoginActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".huiyun.ixconfig.activity.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+        <activity
+            android:name=".huiyun.ixconfig.activity.contrl.AddToAreaActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.AreaSettingActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.ChooseGatewayActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.GatewaySettingActivity"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.scene.SceneConfigActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.ChooseOutputDevActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.scene.SceneSettingActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.ComboConfigActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.WTRWifiSettingActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.DeviceConfigActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.about.AboutHuiyunActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.userlogin.CommonRegistrationActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.MainSettingActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.redray.AddRemoteActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.redray.RedRaySettingActivity"
+            android:theme="@android:style/Theme.Translucent"
+          />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.SetSoftwareActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.setting.SlaveListActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.voice.VoiceActivity"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity android:name="com.umeng.fb.ConversationActivity" />
+        <activity android:name="com.umeng.fb.ContactActivity" />
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".huiyun.ixconfig.activity.timing.AddTimerActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.timing.TimerTaskListActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.ixhuiyunproject.huiyun.ixconfig.activity.back.SwipeBackActivity"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".huiyun.ixconfig.activity.back.SwipeBackLayout"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name=".abtotest.voiptest.CellActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name=".huiyun.ixconfig.activity.cell.DoorFragment"
+            />
+        <!-- Update Activitys End -->
+        <receiver android:name=".huiyun.label.broadcastReceiver.NetworkStateChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+                <action android:name="android.net.wifi.supplicant.STATE_CHANGE" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".huiyun.label.service.ToastService" >
+        </service>
+        <!-- 推送功能 -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.huiyun.ix_configreconstitute" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.huiyun.ix_configreconstitute" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name=".huiyun.ixconfig.push.MyReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.huiyun.ix_configreconstitute" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="140e4e91ba48b01ddd1f8956" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+
+        <!-- 友盟AppKey -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54f666c6fd98c50e1b0010a6" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="智能家居" >
+        </meta-data>
+
+        <service
+            android:name="com.umeng.common.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+
+
+        <!-- cell -->
+        <service
+
+            android:name=".abtotest.voiptest.StartAVActivityService"
+            android:enabled="true">
+        </service>
+
+        <service
+            android:name=".huiyun.ixconfig.activity.cell.CellService"
+            android:enabled="true">
+        </service>
+
+        <!-- Main service -->
+        <!-- Require at least the configure permission to use -->
+        <service
+            android:name="org.abtollc.service.ABTOSipService"
+            android:exported="true"
+            android:permission="android.permission.CONFIGURE_SIP"
+            android:process=":abtoSipStack">
+            <intent-filter>
+                <action android:name="org.abtollc.service.ABTOSipService"/>
+                <action android:name="org.abtollc.service.SipConfiguration"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="org.abtollc.service.DeviceStateReceiver"
+            android:process=":abtoSipStack">
+            <intent-filter>
+                <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>-->
+                <!--
+Remove that too fine change trigger
+<action android:name="android.intent.action.ANY_DATA_STATE" />
+-->
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="org.abtollc.accounts.activate"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Call management -->
+        <receiver
+            android:name="org.abtollc.service.OutgoingCall"
+            android:process=":abtoSipStack">
+            <intent-filter android:priority="10">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL">
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".abtotest.voiptest.ScreenAV"
+                  android:allowTaskReparenting="false"
+                  android:excludeFromRecents="true"
+                  android:launchMode="singleTask"
+                  android:permission="android.permission.USE_SIP"
+                  android:taskAffinity=""
+                  android:process=":abtoSipStack">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="csip" />
+                <data android:scheme="sip" />
+                <data android:scheme="sips" />
+            </intent-filter>
+            <intent-filter android:priority="10" >
+                <action android:name="android.phone.extra.NEW_CALL_INTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="csip" />
+                <data android:scheme="sip" />
+                <data android:scheme="sips" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="org.abtollc.softphone.PrivilegedOutgoingSipCallBroadcaster"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:permission="android.permission.CALL_PRIVILEGED"
+            android:targetActivity=".abtotest.voiptest.ScreenAV">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sip" />
+            </intent-filter>
+        </activity-alias>
+        <activity-alias
+            android:name="org.abtollc.softphone.PrivilegedOutgoingCallBroadcaster"
+            android:configChanges="orientation"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:label="SIP Call"
+            android:launchMode="singleTask"
+            android:permission="android.permission.CALL_PRIVILEGED"
+            android:targetActivity=".abtotest.voiptest.ScreenAV" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/phone" />
+                <data android:mimeType="vnd.android.cursor.item/phone_v2" />
+                <data android:mimeType="vnd.android.cursor.item/person" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="smsto" />
+            </intent-filter>
+        </activity-alias><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+    </application>
+
+
+</manifest>

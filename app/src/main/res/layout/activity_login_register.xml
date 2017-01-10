@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:background="@drawable/ig_login"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="本地登录"
+            android:textColor="@color/ix_green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="0.1"
+        android:gravity="center" >
+
+        <TextView
+            style="@style/layout_wrap"
+            android:text="WELCOMD TO AXTION"
+            android:textColor="@color/ix_green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_user"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            style="@style/layout_wrap"
+            android:src="@drawable/ig_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_user"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ed_user"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="90dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/ig_line"
+                android:hint="用户名"
+                android:maxLength="10"
+                android:paddingLeft="20dip"
+                android:saveEnabled="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <ImageView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dip"
+                android:paddingLeft="7.0sp"
+                android:src="@drawable/ig_ic"
+                android:textColor="#ffffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/layout_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/ed_pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="90dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/ig_line"
+                android:hint="密   码 "
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:paddingLeft="20dip"
+                android:saveEnabled="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
+
+            <ImageView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dip"
+                android:paddingLeft="7.0sp"
+                android:src="@drawable/ig_pwd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_master"
+            style="@style/layout_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <EditText
+                android:id="@+id/ed_master"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5.0px"
+                android:layout_marginLeft="90dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/ig_line"
+                android:hint="主机  ID "
+                android:inputType="textPassword"
+                android:paddingLeft="20dip"
+                android:saveEnabled="true"
+                android:textColor="#000000" 
+                android:textColorHint="#000000"
+                android:text="87214155564978500670ff48"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40dip"
+                android:paddingLeft="7.0sp"
+                android:src="@drawable/ig_mastrer" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_height_wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lay_login"
+            style="@style/layout_height_wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/local_login"
+                style="@style/layout_wrap"
+                android:text=" 本地登录	  "
+                android:textColor="@color/ix_green"
+                android:textSize="16dp" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:text=" |  "
+                android:textColor="#ffffffff"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/remote_login"
+                style="@style/layout_wrap"
+                android:onClick="registerUser"
+                android:text="     远程登录"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_login"
+            style="@style/layout_height_wrap_content"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="55dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_red_shape"
+                android:text="登	录"
+                android:textColor="#ffffffff"
+                android:textSize="23dp" />
+
+            <RelativeLayout
+                android:id="@+id/lay_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/btn_text"
+                    style="@style/layout_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="110dp"
+                    android:onClick="registerUser"
+                    android:text="以注册！，"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                     />
+
+                <TextView
+                    android:id="@+id/btn_regin"
+                    style="@style/layout_wrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:onClick="registerUser"
+                    android:text="去注册！"
+                    android:textColor="@color/ix_green"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

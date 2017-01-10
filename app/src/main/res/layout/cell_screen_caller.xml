@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/ix_bg_whitegray"
+        >
+        
+        <!-- Info -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dip">
+            
+            <TextView
+                    android:id="@+id/caller_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/caller_call_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" >
+                </TextView>
+            
+        </LinearLayout>
+        
+        
+        
+        <!-- Video Layout -->
+        <LinearLayout 
+            android:id="@+id/all_video_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:id="@+id/remote_video_parent" 
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"/>
+            
+            
+             <LinearLayout
+                android:id="@+id/local_video"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="10dip"
+                android:layout_weight="0.1" 
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="2" />
+
+                <LinearLayout
+                    android:id="@+id/local_video_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+        
+         <LinearLayout 
+            android:id="@+id/all_video_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_selector"
+            android:orientation="horizontal"
+            >
+             <Button 
+                android:id="@+id/video_gone"
+                android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:text="开锁"
+                 />
+             </LinearLayout>
+        <!-- CELL -->
+        
+        <LinearLayout 
+            android:id="@+id/cell_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            >
+           <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <Button
+                android:id="@+id/SEND_1"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.1dip"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_2"
+                android:layout_width="107dp"
+                android:layout_height="60dp"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_3"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/gray" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/SEND_4"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_5"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_6"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="6"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/gray" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/SEND_7"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="7"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_8"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="8"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_9"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+           <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/gray" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/SEND_X"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="*"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_0"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="@dimen/line"
+                android:layout_height="fill_parent"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/SEND_J"
+                android:layout_width="107dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/back_selector"
+                android:gravity="center"
+                android:text="#"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+        
+        <!-- Control Layout -->
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="10dip"
+            >
+            
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+                
+                <LinearLayout
+                    android:id="@+id/caller_pick_up_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal" 
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/caller_pick_up_button"
+                        android:layout_width="120dip"
+                        android:layout_height="80dip"
+                        android:layout_marginRight="5dip"
+                         android:src="@drawable/answer"
+                        android:onClick="pickUp"
+                        android:text="PickUp Audio" />
+
+                    <ImageView
+                        android:id="@+id/caller_pick_up_video_button"
+                        android:layout_width="120dip"
+                        android:layout_height="80dip"
+                        android:layout_marginRight="5dip"
+                        android:onClick="pickUpVideo"
+                        android:src="@drawable/answer"
+                        android:text="PickUp Video" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/caller_hang_up_button"
+                    android:layout_width="250dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="15dip"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/unanswer"
+                    android:onClick="hangUP"
+                    android:text="HangUp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>

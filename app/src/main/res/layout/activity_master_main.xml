@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#28A465" >
+
+        <ImageView
+            android:id="@+id/tv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="showMenu"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:paddingLeft="80dp"
+            android:singleLine="true"
+            android:text="主机列表"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/image_tiele"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/device_eare"
+            style="@style/layout_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="主机" />
+
+        <TextView
+            android:id="@+id/device_name"
+            style="@style/layout_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="测试" />
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/listmaster"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:divider="@null"
+            android:cacheColorHint="@android:color/transparent"
+            android:fastScrollEnabled="true"
+             android:listSelector="#00000000"  
+             >
+        </ListView>
+
+    <Button
+        android:id="@+id/btn_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shape"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:onClick="reSeach"
+        android:text="重查"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<resources>  
+ 
+<!-- 全屏幕拉伸-->
+  <style name="layout_full">  
+    <item name="android:layout_width">fill_parent</item>  
+    <item name="android:layout_height">fill_parent</item>  
+  </style>
+   
+<!-- 固定自身大小-->
+  <style name="layout_wrap">  
+    <item name="android:layout_width">wrap_content</item>  
+    <item name="android:layout_height">wrap_content</item>  
+  </style>
+ 
+<!-- 横向分布-->
+  <style name="layout_horizontal" parent="layout_full">  
+    <item name="android:layout_width">0px</item>  
+  </style> 
+    
+<!-- 纵向分布-->
+  <style name="layout_vertical" parent="layout_full">  
+    <item name="android:layout_height">0px</item>  
+  </style> 
+  
+  
+      
+<!-- 高度自适应-->
+  <style name="layout_height_wrap_content">  
+    <item name="android:layout_width">fill_parent</item>  
+    <item name="android:layout_height">wrap_content</item>  
+  </style> 
+         
+  
+      
+<!-- 宽度自适应-->
+  <style name="layout_width_wrap_content">  
+    <item name="android:layout_width">wrap_content</item>  
+    <item name="android:layout_height">fill_parent</item>  
+  </style> 
+  
+<!-- 窗体阴影 -->  
+	<style name="layout_have_shadow">
+		<item name="android:shadowColor">#ff000000</item>
+		<item name="android:shadowDx">0.0</item>
+		<item name="android:shadowDy">1.0</item>
+		<item name="android:shadowRadius">1.0</item>
+	</style>  
+         
+</resources>

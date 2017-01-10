@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="52dip"
+    android:orientation="horizontal"
+    android:descendantFocusability="afterDescendants"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" 
+    style="@style/list_item_single"
+    >
+
+    <TextView
+        android:id="@+id/ed_deviceeare"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="1"
+        android:text="测试"
+        android:background="@drawable/list_edit_bg"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/ed_devicename"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/ed_devicenember"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="15dip"
+        android:layout_weight="1"
+        android:background="@drawable/list_edit_bg"
+        android:gravity="center"
+        android:inputType="number"
+        android:singleLine="true"
+        android:visibility="gone"
+         />
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/ed_devicetype"
+        style="@style/layout_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableLeft="@drawable/checkbox_selector"
+        android:gravity="center"
+        android:paddingLeft="15dp" />
+
+    <ImageView
+        android:id="@+id/ed_devicetext"
+        style="@style/layout_horizontal"
+        android:layout_marginRight="18dip"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:src="@drawable/image_btn" />
+
+</LinearLayout>

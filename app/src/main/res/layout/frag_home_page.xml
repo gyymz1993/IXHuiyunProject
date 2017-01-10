@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+	    android:layout_weight="0.4"
+	    android:layout_marginTop="50dp"
+	    android:background="#f0f0f0" >
+	    
+        <android.support.v4.view.ViewPager
+		    android:id="@+id/vp_advert"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/fl_dot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="0.5"
+	    android:background="#f0f0f0" >
+        
+	    <RelativeLayout
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_centerVertical="true" >
+	    	
+	        <Button 
+	            android:id="@+id/irbtn_hp_center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/selector_hp_center" />
+	    
+		</RelativeLayout>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_centerVertical="true"
+	    	android:orientation="vertical" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="horizontal" >
+	            
+	            <Button 
+	            android:id="@+id/irbtn_hp_1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:layout_marginBottom="3dp"
+	            android:background="@drawable/selector_hp_btn_1"
+	            android:drawableTop="@drawable/hp_icon_1"
+	            android:paddingTop="20dp"
+	            android:gravity="top|center_horizontal"
+	            android:textSize="15sp"
+	            android:layout_weight="1"
+	            android:text="测试" />
+	        
+	        <Button 
+	            android:id="@+id/irbtn_hp_2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="3dp"
+	            android:layout_marginBottom="3dp"
+	            android:background="@drawable/selector_hp_btn_2"
+	            android:drawableTop="@drawable/hp_icon_2"
+	            android:paddingTop="20dp"
+	            android:gravity="top|center_horizontal"
+	            android:textSize="15sp"
+	            android:layout_weight="1"
+	            android:text="开关" />
+	        
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:orientation="horizontal" >
+	        
+	            <Button 
+	            android:id="@+id/irbtn_hp_3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="3dp"
+	            android:layout_marginTop="3dp"
+	            android:background="@drawable/selector_hp_btn_3"
+	            android:drawableTop="@drawable/hp_icon_3"
+	            android:paddingTop="20dp"
+	            android:gravity="top|center_horizontal"
+	            android:textSize="15sp"
+	            android:layout_weight="1"
+	            android:text="遥控" />
+	        
+	        <Button 
+	            android:id="@+id/irbtn_hp_4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="3dp"
+	            android:layout_marginTop="3dp"
+	            android:background="@drawable/selector_hp_btn_4"
+	            android:drawableTop="@drawable/hp_icon_4"
+	            android:paddingTop="20dp"
+	            android:gravity="top|center_horizontal"
+	            android:textSize="15sp"
+	            android:layout_weight="1"
+	            android:text="场景" />
+	            
+	        </LinearLayout>
+	        
+	    </LinearLayout>
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp">
+        
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="horizontal">
+	        
+	        <Button
+	            android:id="@+id/btn_homepage"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="left|center_vertical"
+	            android:background="@drawable/homepage_tab_background"
+	            android:drawableLeft="@drawable/homepage_tab_home"
+	            android:paddingLeft="40dp"
+	            android:drawablePadding="10dp"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:text="主页" />
+
+	        <Button
+	            android:id="@+id/btn_setting"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:gravity="left|center_vertical"
+	            android:background="@drawable/homepage_tab_background"
+	            android:drawableLeft="@drawable/homepage_tab_set"
+	            android:paddingLeft="40dp"
+	            android:drawablePadding="10dp"
+	            android:textColor="#ffffff"
+	            android:textSize="20sp"
+	            android:text="设置" />
+	        
+	    </LinearLayout>
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/homepage_tab_divide"/>
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+    
+</LinearLayout>

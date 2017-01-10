@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:background="#2dc879"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:gravity="center"
+        android:text="请 输 入 设备 区 域 和 名 称"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="区  域"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/add_user"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:scrollHorizontally="true"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:gravity="center"
+            android:text="名  称"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/add_paswd"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:scrollHorizontally="true"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" 
+         android:layout_height="40dip"
+        >
+
+        <Button
+            android:background="#2dc879"
+            android:id="@+id/confirmU"
+            style="@style/layout_horizontal"
+            android:layout_weight="5"
+            android:textColor="#ffffff"
+            android:text="确  定" />
+
+        <TextView
+            android:id="@+id/confirmU"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.04"
+            android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/cancelU"
+            style="@style/layout_horizontal"
+            android:layout_weight="5"
+            android:background="#de2d42"
+             android:textColor="#ffffff"
+            android:text="取  消" />
+    </LinearLayout>
+
+</LinearLayout>

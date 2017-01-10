@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#28A465" >
+
+        <ImageView
+            android:id="@+id/tv_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="showMenu"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@drawable/image_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="编辑组合"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text="提交"
+            android:textColor="@drawable/textview_bg"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_recode_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:padding="10dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shape"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="上传配置到服务器"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

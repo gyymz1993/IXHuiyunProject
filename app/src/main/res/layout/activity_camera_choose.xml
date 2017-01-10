@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ix_bg_whitegray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/rl_actionbar"
+        layout="@layout/title_2pic_green" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ix_bg_whitegray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_vidioClip"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" >
+
+            <ImageView
+                android:id="@+id/vedioview_standard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:background="#000000"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_animation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/rl_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cam_direction_bg" />
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cam_direction_1" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cam_direction_2" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cam_direction_3" />
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/cam_direction_4" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_enterFullScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:src="@drawable/cam_full_screen" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_cameras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="3dp"
+            android:paddingTop="8dp" >
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_lookforcamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_add_device_bg"
+            android:text="局域网查找"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

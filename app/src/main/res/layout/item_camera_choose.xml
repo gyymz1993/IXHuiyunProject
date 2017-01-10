@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="CAMERA"
+        android:textColor="@color/ix_text_gray"
+        android:textSize="20sp" />
+	<TextView 
+	    android:id="@+id/tv_tempstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_marginLeft="20dp"
+        android:text="状态:"
+        android:layout_below="@id/tv_name"
+        android:textColor="@color/ix_text_gray"
+        android:textSize="12sp"/>
+	<TextView 
+	    android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_tempstate"
+        android:text="在线"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tv_name"
+        android:textSize="12sp"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

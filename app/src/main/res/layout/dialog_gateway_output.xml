@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <LinearLayout
+	    android:layout_width="0dip"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="0dip"
+	    android:layout_height="match_parent"
+	    android:layout_weight="20"
+	    android:background="#fff"
+	    android:orientation="vertical" >
+	    
+        <TextView
+	        android:id="@+id/tv_gateway_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dip"
+	        android:background="@drawable/dialog_text"
+	        android:gravity="center"
+	        android:text="更改网关配置信息"
+	        android:textColor="#ffffff"
+	        android:textSize="20sp" />
+    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dip"
+		    android:layout_marginBottom="3dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_area"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="区域"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_area"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="15dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="text"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:layout_marginBottom="3dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="名称"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_name"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="15dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="text"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:layout_marginBottom="3dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_comm"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="通讯类型"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_comm"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="30dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="text"
+	            android:enabled="false"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:layout_marginBottom="3dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_type"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="详细类型"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_type"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="30dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="text"
+	            android:enabled="false"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:layout_marginBottom="3dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_exec"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="执行器号"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_exec"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="30dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="number"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dip"
+		    android:layout_marginBottom="10dip"
+		    android:background="#fff"
+		    android:orientation="horizontal" >
+		    
+            <TextView
+		        android:id="@+id/tv_switch"
+		        android:layout_width="wrap_content"
+		        android:layout_height="30dip"
+		        android:background="#fff"
+		        android:paddingLeft="5dip"
+		        android:paddingTop="10dip"
+		        android:text="开关编号"
+		        android:textColor="#000"
+		        android:textSize="16sp" />
+
+            <EditText
+	            android:id="@+id/et_switch"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dip"
+	            android:layout_marginLeft="10dip"
+	            android:layout_marginRight="30dip"
+	            android:scrollHorizontally="true"
+	            android:textColor="#000000"
+	            android:inputType="number"
+	            android:gravity="center"
+	            android:textSize="16sp" />
+		    
+	    </LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+	
+	        <Button
+	            android:id="@+id/btn_yes"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            style="@style/layout_horizontal"
+	            android:layout_weight="5"
+	            android:background="@drawable/dialog_config"
+	            android:text="确认" />
+	
+	        <TextView
+	            android:id="@+id/tv_space"
+	            android:layout_width="0dip"
+	            android:layout_height="match_parent"
+	            style="@style/layout_horizontal"
+	            android:layout_weight="0.1"
+	            android:background="#fff" />
+	        
+	        <Button
+	            android:id="@+id/btn_no"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            style="@style/layout_horizontal"
+	            android:layout_weight="5"
+	            android:background="@drawable/dialog_config"
+	            android:text="取消" />
+	
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="0dip"
+	    android:layout_height="match_parent"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

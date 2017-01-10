@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/list_item_single"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp" >
+
+    <!-- android:descendantFocusability="afterDescendants" -->
+
+    <TextView
+        android:id="@+id/master_id"
+        style="@style/layout_horizontal"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="0001" />
+
+    <ImageView
+        android:id="@+id/master_text"
+        style="@style/layout_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:src="@drawable/image_btn" />
+
+</LinearLayout>

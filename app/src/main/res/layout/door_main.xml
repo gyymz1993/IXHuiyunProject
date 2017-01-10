@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="back"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="楼宇对讲"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_ly_thbg"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/door_bg"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/id_re_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/id_ms_tv"
+                android:layout_width="40dip"
+                android:layout_height="60dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dip"
+                android:src="@drawable/door_hj_bg" />
+
+            <TextView
+                android:id="@+id/id_tv_time"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_ms_tv"
+                android:layout_marginTop="6dip"
+                android:gravity="center"
+                android:text="呼叫中..."
+                android:textSize="17dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_re_in_cell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/id_ms_tv"
+                android:layout_width="40dip"
+                android:layout_height="60dip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dip"
+                android:src="@drawable/door_t_h_l" />
+
+            <TextView
+                android:id="@+id/id_tv_time"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_ms_tv"
+                android:layout_marginTop="6dip"
+                android:gravity="center"
+                android:text="00:55"
+                android:textSize="17dip" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/id_re_video"
+            style="@style/layout_full"
+            android:background="@drawable/door_th_bg" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_on_cell"
+        style="@style/layout_vertical"
+        android:layout_marginTop="30dip"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/id_ly_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/y_y_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/y_y" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_marginLeft="15dip"
+                android:text="语音接听" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_videoanswer"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginTop="40dip"
+            android:layout_weight="1"
+            android:background="@drawable/y_y_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/s_p" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_marginLeft="15dip"
+                android:text="接听视频" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="40dip"
+            android:layout_weight="1"
+            android:background="@drawable/g_d_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/g_d" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_marginLeft="15dip"
+                android:text="挂   断" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_open_door_ly"
+        style="@style/layout_vertical"
+        android:layout_marginTop="30dip"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/id_ly_door_on"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/y_y_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/door_kg" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_marginLeft="15dip"
+                android:text="开门" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_door_on"
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="20dip"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="40dip"
+            android:layout_weight="1"
+            android:background="@drawable/g_d_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:src="@drawable/g_d" />
+
+            <TextView
+                style="@style/layout_wrap"
+                android:layout_marginLeft="15dip"
+                android:text="挂   断" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_ly_door_on"
+            android:layout_width="wrap_content"
+            android:layout_height="10dip"
+            android:layout_weight="1"
+            android:gravity="center" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

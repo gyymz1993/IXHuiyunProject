@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="back"
+            android:padding="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="关于我们"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="about"
+            android:src="@drawable/menu"
+            android:text="用户反馈"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/about_logo"
+        style="@style/layout_wrap"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/about_logo" />
+
+    <TextView
+        style="@style/layout_wrap"
+        android:layout_below="@+id/about_logo"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="40dip"
+        android:text="    “AXTION”源于一个音乐队的名字，它意味着“精彩的人生舞台”，是轻松愉悦生活的开始。该品牌秉承“享受生活、分享快乐、精彩无限”的理念。\r\n    我们长期致力于智慧小区、智慧城市方向的技术研究及产品开发。凭借丰厚的技术积累和强大的研发力量，结合云计算、物联网等先进技术，逐步构建和形成了智慧社区、智慧家庭的成熟解决方案。"
+        android:textColor="#979797"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/reserved"
+        style="@style/layout_height_wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dip"
+        android:gravity="center"
+        android:text="ALL Right Reserved"
+        android:textColor="@color/ix_text_gray"
+        android:textSize="13sp" />
+
+    <TextView
+        style="@style/layout_height_wrap_content"
+        android:layout_above="@+id/reserved"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dip"
+        android:gravity="center"
+        android:text="Copy Right by Axtion @2015"
+        android:textColor="@color/ix_text_gray"
+        android:textSize="13sp" />
+
+</RelativeLayout>

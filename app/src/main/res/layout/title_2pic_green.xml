@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/ix_green" >
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:src="@drawable/image_back" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="标题"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+    <ImageView 
+        android:id="@+id/iv_title_click"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/remote_chb"
+        android:layout_alignRight="@id/tv_title"
+        android:layout_marginTop="22dp"
+        />
+	
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/menu" />
+
+</RelativeLayout>

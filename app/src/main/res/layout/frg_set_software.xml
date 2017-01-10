@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/ix_green" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="setBack"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:src="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="软件设置"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#ffffff"
+            android:textSize="20dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/setting_item_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/set_message" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="center_vertical"
+            android:text="消息推送"
+            android:textColor="@color/ix_text_gray"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/switch_on"
+            android:tag="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_vibration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/setting_item_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/set_vibration" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="center_vertical"
+            android:text="震动"
+            android:textColor="@color/ix_text_gray"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_vibration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/switch_on"
+            android:tag="1" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/set_Memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/setting_item_bg"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/set_vibration" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:gravity="center_vertical"
+            android:text="悬浮"
+            android:textColor="@color/ix_text_gray"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/switch_on"
+            android:tag="1" />
+    </RelativeLayout>
+
+</LinearLayout>

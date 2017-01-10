@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/setting_item_bg"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/im_set_remote"
+        style="@style/layout_wrap"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dip"
+        android:src="@drawable/remote_add_air_" />
+
+    <TextView
+        android:id="@+id/tx_set_remote"
+        style="@style/layout_wrap"
+        android:layout_gravity="center"
+        android:paddingBottom="20dip"
+        android:paddingLeft="40dip"
+        android:paddingTop="20dip"
+        android:text="卧室4444"
+        android:textColor="@color/ix_text_gray"
+        android:textSize="18sp" >
+    </TextView>
+
+</LinearLayout>

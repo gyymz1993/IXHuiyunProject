@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_2pic_green" />
+
+    <Button
+        android:id="@+id/btn_userWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parent_last"
+        android:gravity="center"
+        android:text="上传自定义词组"
+        android:textColor="#28a465" />
+
+    <Button
+        android:id="@+id/btn_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/parent_last"
+        android:gravity="center"
+        android:text="语言设置"
+        android:textColor="#28a465" />
+
+</LinearLayout>

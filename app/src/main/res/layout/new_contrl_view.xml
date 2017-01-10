@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@drawable/bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/switch_logo"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/contrl_1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/switch_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/blue_logo"
+                android:layout_gravity="center"
+                android:layout_marginBottom="7dip"
+                android:text="台灯" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/text_on"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="状态：" />
+
+                <TextView
+                    android:id="@+id/switch_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="3dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/switch_press"
+            android:layout_width="65dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:background="@drawable/button_off"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

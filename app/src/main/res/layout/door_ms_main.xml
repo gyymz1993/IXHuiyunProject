@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/door_ms_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_re_cell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <TextView
+            android:id="@+id/id_ms_tv"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请  输  入  门  牌  号" />
+
+        <EditText
+            android:id="@+id/id_ed_number"
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_below="@+id/id_ms_tv"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/master_ed_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_re_cell_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/id_ms_tv"
+            android:layout_width="40dip"
+            android:layout_height="60dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dip"
+            android:src="@drawable/door_t_h" />
+
+        <TextView
+            android:id="@+id/id_tv_time"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_ms_tv"
+            android:layout_marginTop="6dip"
+            android:gravity="center"
+            android:text="00:55"
+            android:textSize="17dip" />
+
+        <TextView
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_time"
+            android:layout_marginBottom="18dip"
+            android:gravity="center"
+            android:text="通話中"
+            android:textSize="17dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_re_hung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:id="@+id/id_ms_pb"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_marginTop="10dip"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerHorizontal="true"
+             />
+
+        <TextView
+            android:layout_width="200dip"
+            android:layout_height="30dip"
+            android:layout_below="@+id/id_ms_pb"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="连接中" />
+    </RelativeLayout>
+
+</RelativeLayout>

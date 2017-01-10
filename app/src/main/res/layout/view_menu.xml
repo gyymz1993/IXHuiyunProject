@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/menu_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dip"
+                android:text="智能家居	   由我掌控"
+                android:textColor="#ffffff"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inteligent life , control by me"
+                android:textColor="#ffffff"
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/home_page"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dip"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_scene"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="主页"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scene_show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_scene"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="场景"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/switch_control"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_on_off"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="开关"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/check_show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_remote"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="遥控"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/camera_look"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_monitoring"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="监控"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_set"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="设置"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/test"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        android:visibility="gone"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_set"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="測試"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/michael"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:showDividers="end">
+
+                    <com.ixhuiyunproject.huiyun.ixconfig.view.SettingBarView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="3dip"
+                        custom:backgrounds="#ffffff"
+                        custom:buttonMode="both"
+                        custom:leftBackground="@drawable/home_icon_set"
+                        custom:leftHeight="30dp"
+                        custom:leftMargin="50dp"
+                        custom:leftWidth="30dp"
+                        custom:rightBackground="@drawable/home_icon"
+                        custom:rightHeight="20dp"
+                        custom:rightMargin="50dp"
+                        custom:rightTextColor="@android:color/black"
+                        custom:rightWidth="25dp"
+                        custom:titleMargin="120dip"
+                        custom:tTextColor="#ffffff"
+                        custom:titleTextSize="9sp"
+                        custom:titles="門禁"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_line"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

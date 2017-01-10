@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="20dip" >
+
+        <ImageButton
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_num_bg"
+            android:src="@drawable/tv_power_on" />
+
+        <TextView
+            android:id="@+id/tx_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_red_shape"
+            android:textColor="#FFFFFF"
+            android:text="控制页面"
+            android:textSize="16dip"
+             />
+
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_num_bg"
+            android:src="@drawable/tv_power_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_relative"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1.2"
+        android:background="@drawable/dialog_config"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:tag="0" >
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="26"
+            android:textColor="#ffffffff"
+            android:textSize="100dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/temperature"
+            android:text="°C"
+            android:textColor="#ffffffff"
+            android:textSize="40dip" />
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dip"
+        android:layout_marginRight="50dip"
+        android:layout_marginTop="20dip"
+        android:max="20"
+        android:maxHeight="40px"
+        android:minHeight="20px"
+        android:paddingLeft="18px"
+        android:paddingRight="18px"
+        android:progressDrawable="@drawable/seekbar_define_color_style"
+        android:thumb="@drawable/seekbar_thumb"
+        android:visibility="invisible" >
+    </SeekBar>
+
+    <LinearLayout
+        android:id="@+id/bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.6"
+        android:orientation="vertical"
+        android:padding="20dip"
+        android:paddingTop="20dip" >
+
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/btn_refrigeration"
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_cold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="制冷"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+			
+            
+            <LinearLayout
+                android:id="@+id/btn_heating"
+                style="@style/layout_horizontal"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_hot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="加热"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_dehumidifier"
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_wet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="除湿"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+         <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+        <LinearLayout
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/btn_winddirection"
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_wind_loca" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="风向"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_wind_speed"
+                style="@style/layout_horizontal"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_wind_speed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="风速"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_timing"
+                style="@style/layout_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/btn_air_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:src="@drawable/air_time" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="定时"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

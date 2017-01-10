@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tx_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#F3F3F3"
+        android:gravity="center"
+        android:text="请输入区域名"
+        android:textColor="#C0C0C0"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_area"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="10dip"
+            android:scrollHorizontally="true"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_wrap"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#13f480" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/confirmU"
+            style="@style/layout_horizontal"
+            android:layout_weight="5"
+            android:background="@drawable/btn_linearlayoutbg"
+            android:text="确  定"
+            android:textColor="#2dc879"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

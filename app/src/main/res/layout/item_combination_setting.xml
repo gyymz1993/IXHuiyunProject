@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:paddingTop="2dp"
+    android:paddingBottom="3dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_input_bg"
+        android:layout_marginRight="8dp" >
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="#969696"
+            android:textSize="15sp"
+            android:text="@string/info_for_input" />
+
+        <ImageView
+            android:id="@+id/iv_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/image_btn"
+            android:contentDescription="@string/content_description_check" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_input_bg"
+        android:layout_marginLeft="8dp" >
+
+        <TextView
+            android:id="@+id/tv_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#969696"
+            android:textSize="15sp"
+            android:text="@string/info_for_output" />
+
+    </RelativeLayout>
+
+</LinearLayout>

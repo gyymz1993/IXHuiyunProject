@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_full"
+    android:background="@color/ix_bg_whitegray"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/starred_item_layout"
+        style="@style/layout_wrap"
+        android:layout_gravity="center"
+        android:background="@color/ix_bg_whitegray" >
+
+        <LinearLayout
+            android:id="@+id/lay_gridview"
+            android:layout_width="175dip"
+            android:layout_height="175dip"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            >
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/img_contrl"
+                style="@style/layout_full"
+                android:contentDescription="@string/content_description_default" />
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/contrl_switch"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="35dip"
+            android:layout_marginRight="15dip"
+            android:adjustViewBounds="true"
+            android:background="@drawable/contrl_on"
+            android:contentDescription="@string/content_description_default" />
+        
+        <TextView
+            android:id="@+id/contrl_name"
+            android:text="@string/door"
+            android:textColor="#969696"
+            android:textSize="15sp"
+            style="@style/layout_wrap"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="5dip"
+            android:adjustViewBounds="true"
+            />
+        
+    </FrameLayout>
+
+</LinearLayout>
